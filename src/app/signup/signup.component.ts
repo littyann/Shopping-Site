@@ -19,13 +19,13 @@ export class SignupComponent {
     phone: '',
   };
 
-  constructor(private apiRegister:RegisterService, private router: Router) {}
+  constructor(private apiRegister:RegisterService) {}
 
   registerUser() {
     this.apiRegister.registerUser(this.user).subscribe(
       (response) => {
         console.log('User registered successfully:', response);
-alert("User registered successfully:")
+        alert("User registered successfully:")
         
       },
       (error) => {
