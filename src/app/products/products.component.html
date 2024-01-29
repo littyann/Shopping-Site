@@ -4,9 +4,11 @@
           <div class="card col-md-4">
             <img  height="200px" class="card-img-top" [src]="item?.thumbnail" alt="" />
               <h5 >{{item.title}}</h5>
+              <p style="font-weight: bold;">Rating: {{item.rating}}</p>
               <p >{{item.description}}</p>
               <p><strong>Price:</strong> ${{item.price}}&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <span style="font-weight: bold;">Discount:</span><span> {{item.discountPercentage}}%</span>
               </p>
+              
               
           </div>
       </ng-container>
