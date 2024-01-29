@@ -1,0 +1,15 @@
+<header>
+    <div class="navbar bg-warning shadow">
+        <a style="margin-right: 50px;" class="nav-link" routerLink="products" ><button class="btn ">Home</button></a>
+
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+    </div>
+    <span class="fas fa-search search-icon"></span>
+
+   
+                    
+        <a style="margin-right: 50px;" class="nav-link" routerLink="user/register" ><button class="btn ">Register</button></a>
+
+    </div>
+</header>
